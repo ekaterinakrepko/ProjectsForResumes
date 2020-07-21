@@ -1,0 +1,138 @@
+
+.formCard {
+    background: #4a5962cf;
+   height: 460px;
+   max-width: 614px;
+   display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding-left: 22px;
+    padding-right: 24px;
+    opacity: 0.9;
+    margin: 15px;
+
+
+}
+input[type="text"],
+input[type="email"],
+textarea
+{
+    background: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    border-bottom: 0.5px solid silver;
+    font-size: 16px;
+  
+}
+input::placeholder,
+textarea::placeholder{
+    color: #bdbebf;
+  }
+
+.formMap{
+    background:#4a5962cf; 
+    /* background:#4a5962;  */
+   height: 460px;
+   max-width: 500px;
+   display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    opacity: 0.9;
+    margin: 15px;
+    padding: 20px 22px 15px 22px;
+} 
+.formMap_img{
+    content: url(../img/map.png);
+}
+.send_message{
+    background: #6eeee4;
+    border:none;
+    padding:20px 40px;
+}
+.form p{ 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #bdbebf;
+    font-size: 15px; 
+    padding: 2px;   
+    position: relative;
+}
+.formMap_info{
+    display: flex;
+     flex-flow: column;
+     padding-bottom: 20px;
+}
+
+.formMap_info_padding{
+    padding-bottom: 3px;
+}
+.form_box-card{
+    display: flex;
+    
+}
+.form_box{
+    display: flex;
+    flex-flow: wrap;
+    background: #fafcfc url(../img/form_team_trees.png) no-repeat center/cover;
+    padding-top: 130px;
+    padding-bottom: 122px;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+@media(max-width:1160px){
+
+    .form_box-card{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+    }
+   
+}
+
+@media(max-width:1080px){
+
+  
+    .formCard{
+        max-width: 400px;
+        height: 420px;
+
+    }
+    .formMap{
+        max-width: 460px;
+        height: 400px;
+
+    }
+    .formMap_img{
+        width: 360px;
+    }
+   
+    .form_box{
+        max-width: 1080px;
+    }
+}
+
+
+@media(max-width:500px){
+
+  
+    .formCard{
+        max-width: 350px;
+        height: 400px;
+
+    }
+    .formMap{
+        max-width: 350px;
+        height: 400px;
+
+    }
+    .formMap_img{
+        width: 310px;
+    }
+   
+    .form_box{
+        max-width: 500px;
+    }
+}
